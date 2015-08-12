@@ -1,0 +1,22 @@
+1. Buat folder baru di htdocs dengan nama coba-gambar
+2. Kemudian ekstrak file rar kedalam folder tersebut :
+   kirim-gambar.html
+   upload.php
+   folder gambar
+3. Buat database dalam mysql dengan nama db_gambar
+4. Jika anda menggunakan phpmyadmin jalankan query berikut untuk membuat susunan tabelnya :
+
+   DROP TABLE IF EXISTS `tb_gambar`;
+   CREATE TABLE IF NOT EXISTS `tb_gambar` (
+   `id` int(11) NOT NULL AUTO_INCREMENT,
+   `judul_gambar` varchar(30) NOT NULL,
+   `nama_file` varchar(50) NOT NULL,
+   PRIMARY KEY (`id`)
+   ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+5. kemudian jalankan http://localhost/coba-gambar/kirim-gambar.html
+
+Semua gambar yang diupload akan masuk folder htdocs/coba-gambar/gambar
+
+Selamat mencoba
+www.zainalhakim.web.id
